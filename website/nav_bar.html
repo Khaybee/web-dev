@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spirax&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Norican&family=Spirax&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Norican&family=Pacifico&family=Spirax&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#mantra">Mantra</a></li>
+            <li><a href="https://www.msn.com/en-xl/news?ocid=msedgdhphdr&cvid=1c9fb09ee4e04a8ea2cfb0f3daf0f170"
+                    target="_blank">Blog</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+            <li class="dropdownicon"><a href="#" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="sec-1-grad">
+        <div class="row">
+            <div class="col-8">
+                <div class="leftSide-col">
+                    <h1 class="large">Therapy With Nurse Bee!</h1>
+                    <h2 class="large"><i> Here to listen...</i></h2>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rightSide-col">
+                    <div class="video">
+
+                        <iframe width="500" height="350" src="https://www.youtube.com/embed/ndZBjSNNZeA"
+                            title="23 August 2023" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="sec-2-header">Your Mental Health Is Important</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="image/heart-chat.png" alt="">
+                    </div>
+                    <label for="">Chat with Me</label>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, nisi quia magnam obcaecati
+                        sunt possimus.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="image/heart-chat.png" alt="">
+                    </div>
+                    <label for="">Daily Mantra</label>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, nisi quia magnam obcaecati
+                        sunt possimus.</p>
+                </div>
+            </div>
+            <!-- <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="image/heart-chat.png" alt="">
+                    </div>
+                    <label for="">Daily Mantra</label>
+                    <p>Find your mantra, a powerful spiritual truth focused on one small but important truth at a time.
+                    </p>
+                </div>
+            </div> -->
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="image/heart-chat.png" alt="">
+                    </div>
+                    <label for="">Chat with Me</label>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, nisi quia magnam obcaecati
+                        sunt possimus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learnMore"><a href="">Learn More</a></button>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+            <div class="row align-centre">
+                <div class="col-7">
+                    <div class="for-pad">
+                        <h1 class="connect-header">
+                            <p><strong>Let's work out your mental health together for a <i>healthier you</i></strong></p>
+                        </h1>
+                        <p class="reset-margin">
+                            <span>
+                                <b>
+                                    <span class="connect">Connect with us 24/7 for excellent therapy sessions.</span>
+                                </b>
+                            </span>
+                        </p>
+                        <div class="invisible-line">
+                            <hr >
+                        </div>
+                        <br><button class="btn-like">
+                            <a href="">Book an appointment</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="img-2">
+                        <img src="image/Holding-hand.jpg" alt="holding hand">
+                    </div>
+                </div>    
+                <div></div>
+             </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>Another space</p>
+                <img src="image/Help.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function dropdownMenu() {
+            var a = document.getElementById("dropdownClick");
+            if (a.className === "topnav") {
+                a.className += " responsive";
+            }
+            else {
+                a.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
