@@ -1,0 +1,101 @@
+body{
+    font-family: Tahoma;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+#wrapper{
+    width: 90%;
+    max-width: 1500px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+#page-banner{
+    background: rgba(225, 171, 212, 0.909);
+    text-align: center;
+    padding: 2px;
+    font-style: bold;
+}
+
+h1{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 2px;
+    
+}
+
+p{
+    font-size: 22px;
+    padding: 1px;
+    margin-top: 0.5px;
+}
+
+h2{
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+    margin-left: 5px;
+    margin-top: 1px;
+    padding-left: 20px;
+    font-size: 25px;
+   
+}
+
+.name{
+    margin: 10px;
+    padding: 10px;
+}
+
+li{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    border-left: 7px solid rgb(221, 216, 216);
+}
+
+.delete{
+    padding: 7px;
+    margin: 0 5rem;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(114, 14, 114, 0.705);
+    border-radius: 7px;
+    border-width: 10px;
+    color: #f4f4f4
+    
+}
+
+.delete:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+li:hover {
+    border-left-color: rgb(167, 15, 167); 
+}
+
+button{
+    font-size: 18px;
+    padding: 3px 10px;
+}
+
+input{
+    height: 25px;
+    width: 14.5rem;
+}
