@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #344a72;
+        }
+
+        #container {
+            box-sizing: border-box;
+            height: 450px;
+            margin: 50px auto;
+            max-width: 350px;
+            padding: 5px;
+            font-weight: 100;
+        }
+
+        .form {
+            padding: 10px;
+        }
+
+        .free{
+            font-family: Segoe UI;
+            margin: 10px;
+            text-align: center;
+            color: rgb(78, 76, 76);
+        }
+
+        .form-wrap h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            color: rgb(46, 46, 46);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .form-wrap {
+            padding: 10px;
+            background-color: white;
+        }
+
+        .form-wrap h1,
+        .form-wrap p {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .form-wrap .form-group label {
+            display: block;
+            font-family: Segoe UI;
+            color: rgb(100, 97, 97);
+        }
+
+        .form-wrap .form-group input {
+            width: 100%;
+            border-radius: 4px;
+            height: 30px;
+            padding: 1px;
+            margin-top: 1px;
+            border: 1px solid rgb(214, 211, 211);
+        }
+
+        .form-wrap button {
+            padding: 8px;
+            border: 3px black solid;
+            width: 100%;
+            background-color: #49c1a2;
+            display: block;
+            color: #f0efef;
+            font-size: 12px;
+        }
+
+        .form-wrap button:hover {
+            cursor: pointer;
+            background-color: #37a08e;
+        }
+
+        .form-wrap .bottom-text {
+            text-align: center;
+            font-size: 12px;
+            font-family: Segoe UI;
+            margin: auto;
+        }
+
+        footer {
+            text-align: center;
+            color: #ffffff;
+            font-family: Segoe UI;
+            margin-top: 6px;
+        }
+
+        footer a {
+            color: #49c1a2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="form-wrap">
+            <div class="sign">
+                <h1><strong>Sign Up</strong></h1>
+                <p class="free">It's free and only takes a minute</p>
+            </div>
+            <form class="form">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="firstName" id="first-name" />
+                </div><br>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="lastName" id="last-name" />
+                </div><br>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div><br>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                </div><br>
+                <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="pasword2" id="password2" />
+                </div><br>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="bottom-text"><br>
+                    By clicking the Sign Up button, you agree to our<br>
+                    <a href="#">Terms & Conditions</a> and
+                    <a href="#">Privacy Policy</a>
+                </p>
+            </form>
+        </div>
+        <footer>
+            <p>Already have an account? <a href="#">Login Here</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
