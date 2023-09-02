@@ -244,8 +244,7 @@ span.connect {
 }
 
 .img-2 img {
-    box-shadow: -2px -2px 20px 1px rgba(0,0,0,.15), 
-                2px 2px 17px 1px rgba(0,0,0,1);
+    box-shadow: -2px -2px 20px 1px rgba(0,0,0,.15);
     border-radius: 4px;
 }
 
@@ -266,7 +265,7 @@ div.foot {
     padding-bottom: 2%;
 }
 
-.section-2-footer, .copyright {
+.footer-section2, .copyright {
     padding-left: 10%;
     padding-top: 20px;
     padding-bottom: 1%;
@@ -288,14 +287,14 @@ footer.footsy ul {
     padding-left: 0;
 }
 
-footer.footsy ul li a, .section-2-footer a {
+footer.footsy ul li a, .footer-section2 a {
     text-decoration: none;
     color: #0064b0;
     line-height: 2;
 }
 
 
-footer.footsy ul li a:hover, .section-2-footer a:hover {
+footer.footsy ul li a:hover, .footer-section2 a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -339,18 +338,18 @@ input[type=submit]:hover {
 p.footer-line {
     border: 1px solid rgba(73, 72, 72, .15);
     border-width: thin;
-    width: 100%;
-    padding-left: 0;
-    left: 0;
+    width: 90%;
+    margin-left: 5%;
+
 }
 
-.section-2-footer p, .section-2-footer h3, .section-2-footer h2 {
+.footer-section2 p, .footer-section2 h3, .footer-section2 h2 {
     margin-top: 0;
     margin: auto;
     color: #1b1a1a;
 }
 
-.section-2-footer a {
+.footer-section2 a {
     font-size: 13px;
 }
 
