@@ -5,20 +5,22 @@ nav, header, footer {
 body {
     margin: 0;
     line-height: 1;
+    height: 100%;
 }
 
 label {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.2 ;
 }
 
 .container {
     width: 100%;
+    height: 100%;
     margin: auto;
     padding-top: 4%;
     padding-bottom: 4%;
@@ -83,13 +85,14 @@ ul.topnav li.topnav-right {
 ul.topnav li a {
     text-decoration: none;
     min-height: 16px;
+    font-size: 14px;
     display: block;
     padding: 14px;
     text-transform: uppercase;
     color: #666;
 }
 
-button.learnMore:hover, a.btn-like:hover {
+button.learnMore:hover, button.btn-like:hover {
     background-color: #2064c2;
     cursor: pointer;
 }
@@ -106,13 +109,19 @@ ul.topnav li.dropdownicon {
 /******* CUSTOM STYLES *******/
 
 #sec-1-grad {
-    /* background: #076DFF;
-    background: -webkit-linear-gradient(#076DFF, #65a5ff);
-    background: -o-linear-gradient-(#076DFF, #65a5ff);
-    background: -moz-linear-gradient(#076DFF, #65a5ff);
-    background: linear-gradient(#076DFF, #65a5ff); */
-    background-color: #4a55f7;
+    /* background-color: #4a55f7; */
     /* background-color: #000CAE; */
+    background-image: url(image/love-coffee.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    box-sizing: border-box;
+    background-size: cover;
+    height: auto;
+    min-height: 600px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+
 }
 
 div.box {
@@ -130,33 +139,30 @@ div.icon {
     width: 100%;
 }
 
-.leftSide-col {
-    margin-left: 20%;
-}
 
-.rightSide-col {
-    margin-left: 5%;
-}
-
-div.leftSide-col h1.large {
-    /* color: rgb(235, 235, 78); */
-    /* color: #ffbb2a; */
-    color: #ffc13d;
-    font-size: 70px;
+.leftSide-col h1.large {
+    color: rgb(240, 235, 235);
+    font-size: 80px;
     font-family: Pacifico, serif;
     line-height: 70px;
     padding: 15px;
-    display: flex;
-    
+    text-align: center;
+    letter-spacing: 10px;
+    /* color: rgb(235, 235, 78); */
+    /* color: #ffbb2a; */
+    /* color: #ffc13d; */
 }
 
 h2.large {
     font-family: cursive, serif;
     font-size: 20px;
-    color: #fff;
+    color: rgb(230, 230, 16);
     margin-top: 2px;
     text-align: end;
-    margin-right: 70px;
+    margin-right: 40px;
+    /* color: #0b9ca7; */
+    /* color: #b67a0a; */
+    /* color: #0a838b; */
 }
 
 .large {
@@ -164,21 +170,23 @@ h2.large {
 }
 
 h1.sec-2-header {
-    font-size: 65px;
+    font-size: 45px;
     text-align: center;
 }
 
 .learnMore {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 700;
     background-color: #0060ff;
+    border: 1px #0060ff;
     text-align: center;
-    padding: 15px 60px;
+    padding: 15px 50px;
     display: block;
     border-radius: 7px;
     margin: 5px;
     display: block;
     margin: auto;
+    /* background-color: #cc8502cc; */
 }
 
 
@@ -197,14 +205,15 @@ button.learnMore a {
 }
 
 h1.connect-header p strong{
-    font-size: 70px;
+    font-size: 45px;
     padding: 10px;
     padding-right: 30px;
 }
 
 .for-pad {
-    padding-left: 20%;
-    padding-right: 10%;
+    padding-left: 7%;
+    padding-right: 15%;
+    padding-top: 20px;
 }
 
 .invisible-line hr {
@@ -213,18 +222,20 @@ h1.connect-header p strong{
 }
 
 span.connect {
-    font-size: 25px;
+    font-size: 18px;
     color: rgb(27, 26, 26);
 }
 
 .btn-like {
-    font-size: 25px;
-    font-weight: 300;
-    background-color: #0060ff;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #0150d8;
+    /* background-color: #0060ff; */
     text-align: center;
-    padding: 20px 33px;
+    padding: 17px 30px;
     border-radius: 7px;
     border: 1px #0060ff;
+    margin-bottom: 20px;
 }
 
 .btn-like a {
@@ -233,13 +244,127 @@ span.connect {
 }
 
 .img-2 img {
-    height: 450px;
+    box-shadow: -2px -2px 20px 1px rgba(0,0,0,.15), 
+                2px 2px 17px 1px rgba(0,0,0,1);
+    border-radius: 4px;
 }
 
 .img-2 {
     margin-top: 20px;
+    margin-bottom: 0;
 }
 
+/*************** FOOTER ****************/
+
+div.foot {
+    background-color: #eee;
+}
+
+.footsy {
+    padding-left: 10%;
+    padding-top: 8%;
+    padding-bottom: 2%;
+}
+
+.section-2-footer, .copyright {
+    padding-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 1%;
+}
+
+#footer-row1 {
+    align-items: flex-start;
+    width: 100%;
+}
+
+footer.footsy h1 {
+    color: #1b1a1a;
+    font-size: 32px;
+}
+
+footer.footsy ul {
+    list-style: none;
+    font-size: 15px;
+    padding-left: 0;
+}
+
+footer.footsy ul li a, .section-2-footer a {
+    text-decoration: none;
+    color: #0064b0;
+    line-height: 2;
+}
+
+
+footer.footsy ul li a:hover, .section-2-footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input[type=text], input[type=email] {
+    width: 70%;
+    min-width: 150px;
+    font-size: 16px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 20px;
+    outline: none;
+    
+}
+
+.newsletter::placeholder {
+    font-size: 16px;
+    padding-top: 5%;
+}
+
+input[type=submit] {
+    background-color: #0060ff;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 28px;
+    width: 100px;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #f7eded;
+}
+
+input[type=submit]:hover {
+    background-color: #121213;
+    color: #fff;
+}
+
+p.footer-line {
+    border: 1px solid rgba(73, 72, 72, .15);
+    border-width: thin;
+    width: 100%;
+    padding-left: 0;
+    left: 0;
+}
+
+.section-2-footer p, .section-2-footer h3, .section-2-footer h2 {
+    margin-top: 0;
+    margin: auto;
+    color: #1b1a1a;
+}
+
+.section-2-footer a {
+    font-size: 13px;
+}
+
+.copyright {
+    margin-top: 10px;
+    padding-top: 0;
+    padding-bottom: 5%;
+}
+
+.copy span {
+    font-size: 13px;
+    text-align: left;
+    padding-top: 10px;
+}
 
 @media screen and (max-width:700px) {
     ul.topnav li:not(:nth-child(1)) {
@@ -272,20 +397,45 @@ span.connect {
     }
 
     h1.sec-2-header {
-        font-size: 50px;
+        font-size: 35px;
     }
 
-    .col-8, .col-5, .col-4, .col-7 {
+    .full-each {
         width: 100%;
+        margin: 0;
     }
 
-    .img-2 {
-        margin-left: 0;
-        align-items: center;
+    .mobileStack {
+        display: block;
+        width: 50%;
+    }
+
+    .mobileStack2 {
+        display: block;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .align-centre {
+        margin-right: 0;
+    }
+
+    .for-pad {
+        padding: 0;
+    }
+
+    h1.connect-header p strong {
+        font-size: 60px;
     }
 
     .img-2 img {
-        width: 500px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .img-2 {
+        margin: 15px;
+
     }
 
     div.box {
