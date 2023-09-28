@@ -140,6 +140,7 @@ body {
     background: linear-gradient(315deg, rgb(14, 122, 95) 0%, rgb(62, 116, 216) 40% 40%, rgb(248, 215, 27) 120%);
     /* background: linear-gradient(315deg, rgb(93, 129, 247) 0%, rgb(120, 162, 240) 40%, rgb(98, 182, 238) 100%); */
     border: none;
+    border-radius: 10px;
   }
 
   .original-image a {
@@ -154,14 +155,21 @@ body {
   }
 
   /* Hint: What can you do with a media query and flexbox? */
-  /* @media (max-width: 1000px) {
+  @media (max-width: 1000px) {
     .pricing-container {
-      flex-direction: column;
-      height: initial;
+      /* flex-direction: column; */
+      
+      height: 100%;
+    }
+
+    .pricing-plan {
     }
 
     .original-image {
       margin: 20px;
     }
     
-  } */
+    .original-image a {
+      font-size: 1.5rem
+    }
+  }
