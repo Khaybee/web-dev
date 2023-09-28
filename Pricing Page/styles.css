@@ -1,0 +1,167 @@
+body {
+    font-family: 'Sono', sans-serif;
+    background-color: #dce7ee;
+    text-align: center;
+  }
+
+  .pricing-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .pricing-plan {
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    max-width: 250px;
+    min-height: 550px;
+    flex: 1;
+    /* padding: 30px; */
+    border-radius: 15px;
+    
+  }
+
+  .colored-part {
+      height: 10%;
+      /* background: linear-gradient(315deg, #bd1e46 0%, #e73e68 40%, gold 100%);   */
+      /* background-color: rgb(201, 66, 88); */
+      padding: 10px 30px;
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+
+  }
+
+  hr {
+    border: 1px solid #fff;
+  }
+
+  .basic-plan {
+    background: linear-gradient(315deg, #af0c79 0%, #e73e68 40%, gold 100%);
+  }
+
+  .standard-plan {
+    background: linear-gradient(315deg, rgb(54, 54, 179) 0%, rgb(38, 109, 240) 40%, rgb(129, 200, 247) 100%);
+    /* background: linear-gradient(315deg, rgb(54, 54, 179) 0%, rgb(12, 95, 248) 40%, rgb(133, 133, 228) 100%); */
+  }
+
+  .premium-plan {
+    background: linear-gradient(315deg, rgb(6, 175, 133) 0%, rgb(58, 202, 166) 40%, rgb(178, 236, 236) 100%);
+  }
+
+  .colored-part > p {
+      font-size: 0.5rem;
+      color: #eee3e3;
+  }
+
+  .plan-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #fff;
+  }
+
+  .reduce-line {
+    margin: 30px 80px;
+    margin-top: 0;
+    border: 1px solid #d6d3d3;
+  }
+
+  .plan-price {
+    margin-top: 20px;
+    /* font-size: 1.5rem; */
+    /* font-weight: 900; */
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+
+  .make-big {
+    font-size: 5rem;
+    position: relative;
+    display: inline;
+  }
+
+  .make-big::before {
+    content: "$";
+    position: absolute;
+    top: -0.2em; 
+    left: 0;
+    font-weight: normal;
+  }
+
+  .make-big span {
+    margin-left: 40px;
+    font-weight: bold;
+  }
+
+  .plan-features {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+    display: list-item;
+    font-size: 0.7rem;
+  }
+
+
+  .plan-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 8px 10px;
+  }
+
+  #basic-hover:hover {
+    background: linear-gradient(315deg, #960766 0%, #f35a80 40%, rgb(248, 215, 27) 100%);
+    cursor: pointer;
+  }
+
+  #standard-hover:hover {
+    background: linear-gradient(315deg, rgb(79, 79, 221) 0%, rgb(91, 131, 206) 40%, rgb(130, 190, 229) 100%);
+    cursor: pointer;
+  }
+
+  #premium-hover:hover {
+    background: linear-gradient(315deg, rgb(30, 170, 135) 0%, rgb(82, 231, 194) 40%, rgb(178, 236, 236) 100%);
+    cursor: pointer;
+  }
+
+  .original-image button {
+    padding: 10px;
+    background: linear-gradient(315deg, rgb(14, 122, 95) 0%, rgb(62, 116, 216) 40% 40%, rgb(248, 215, 27) 120%);
+    /* background: linear-gradient(315deg, rgb(93, 129, 247) 0%, rgb(120, 162, 240) 40%, rgb(98, 182, 238) 100%); */
+    border: none;
+  }
+
+  .original-image a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .original-image button:hover {
+    /* background: linear-gradient(315deg, rgb(26, 68, 206) 0%, rgb(62, 116, 216) 40%, rgb(52, 163, 236) 100%); */
+    background: linear-gradient(315deg, rgb(20, 114, 90) 0%, rgb(36, 89, 189) 40% 40%, rgb(206, 180, 32) 120%);
+  }
+
+  /* Hint: What can you do with a media query and flexbox? */
+  @media (max-width: 1000px) {
+    .pricing-container {
+      flex-direction: column;
+      height: initial;
+    }
+
+    .original-image {
+      margin: 20px;
+    }
+    
+  }
