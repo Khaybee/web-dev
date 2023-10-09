@@ -101,7 +101,7 @@ h2 {
 }
 
 .bottom-container {
-    background: linear-gradient(300deg, rgb(36, 89, 189), #ff4c68, #ef8172);
+    background: linear-gradient(300deg, rgb(36, 89, 189), rgb(196, 140, 149), #ef8172);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
     padding: 50px 0 20px;
@@ -116,7 +116,7 @@ h2 {
 
 @media (max-width: 768px) {
     .name {
-      font-size: 9rem;
+      font-size: 7rem;
       margin: 50px auto 0 auto;
     }
     
