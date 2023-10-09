@@ -124,10 +124,12 @@ h2 {
       font-size: 1.5rem;
     }
 
-    
-    /* .sub-text {
-        font-size: 0.5rem;
-        color: rgb(187, 106, 120);
-    } */
+    .contact-message {
+        width: 50%;
+    }
+
+    .sub-text {
+        margin: auto;
+    }
   }
   
