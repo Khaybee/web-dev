@@ -73,7 +73,7 @@ p {
 }
 
 .sub-text {
-    font: 0.5rem;
+    font-size: 0.5rem;
     color: rgb(187, 106, 120);
 }
 
@@ -125,9 +125,9 @@ h2 {
     }
 
     
-    .sub-text {
-        font: 0.2rem;
+    /* .sub-text {
+        font-size: 0.5rem;
         color: rgb(187, 106, 120);
-    }
+    } */
   }
   
