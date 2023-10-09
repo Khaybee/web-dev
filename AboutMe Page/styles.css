@@ -123,5 +123,11 @@ h2 {
     .profession {
       font-size: 1.5rem;
     }
+
+    
+    .sub-text {
+        font: 0.2rem;
+        color: rgb(187, 106, 120);
+    }
   }
   
