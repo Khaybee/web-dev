@@ -1,0 +1,127 @@
+.background-image {
+    background-image: url(./images/light-blue.jpg);
+    background-position: relative;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 120px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+body {
+    text-align: center;
+    color: pink;
+}
+
+p {
+    line-height: 2;
+}
+
+.name {
+    font-size: 10rem;
+    font-family: "Sacramento", cursive;
+    color: pink;
+}
+
+.profession {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    color: pink;
+}
+
+.profile-picture {
+    border-radius: 50%;
+}
+
+.profile-pictureText {
+    color: black;
+    margin: auto;
+    width: 70%;
+}
+
+.dotted-line {
+    width: 4%;
+    border: 6px dotted pink;
+    margin: 100px auto;
+    border-bottom: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 50%;
+    margin: 100px auto 0 auto;
+}
+
+.to-resume {
+    background: linear-gradient(315deg,  pink 20%, rgb(36, 89, 189) 120%);
+    border: none;
+}
+
+.to-resume:hover, .btn:hover {
+    background: linear-gradient(315deg,  rgb(33, 81, 170) 50%, rgb(168, 122, 130) 120%);
+}
+
+.sub-text {
+    font: 0.5rem;
+    color: rgb(187, 106, 120);
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.btn {
+    background: linear-gradient(315deg,  rgb(196, 140, 149) 20%, rgb(36, 89, 189) 120%);;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.bottom-container {
+    background: linear-gradient(300deg, rgb(36, 89, 189), #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    padding: 50px 0 20px;
+    margin-top: 8rem;
+}
+
+.copyright {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .name {
+      font-size: 9rem;
+      margin: 50px auto 0 auto;
+    }
+    
+    .profession {
+      font-size: 1.5rem;
+    }
+  }
+  

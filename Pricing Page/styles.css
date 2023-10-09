@@ -157,12 +157,8 @@ body {
   /* Hint: What can you do with a media query and flexbox? */
   @media (max-width: 1000px) {
     .pricing-container {
-      /* flex-direction: column; */
-      
+      flex-direction: column;
       height: inherit;
-    }
-
-    .pricing-plan {
     }
 
     .original-image {
