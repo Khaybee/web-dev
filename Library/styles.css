@@ -99,3 +99,7 @@ input{
     height: 25px;
     width: 14.5rem;
 }
+
+#Search {
+    text-align: center;
+}
