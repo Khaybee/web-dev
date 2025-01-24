@@ -6,8 +6,10 @@ document.getElementById("calculateBtn").addEventListener("click", function () {
         alert("Please enter both names.");
     } else {
 
-        var love = Math.random();
-            love = Math.floor(love * 100) + 1;
+        // var love = Math.random();
+        //     love = Math.floor(love * 100) + 1;
+
+        var love = calculateLoveScore(yourName, partnerName)
         
         if (love === 100){
             alert("You are a " + love + "% match.\n\n" +
@@ -34,8 +36,21 @@ document.getElementById("calculateBtn").addEventListener("click", function () {
          // Refresh the page after the alert is closed
         window.location.reload();
 
-        // Here, you can calculate the love percentage and display it to the user.
-        // var lovePercentage = Math.floor(Math.random() * 101); // For demonstration purposes, generate a random percentage.
-        // alert("Love Percentage between " + yourName + " and " + partnerName + " is " + lovePercentage + "%");
     }
 });
+
+function calculateLoveScore(name1, name2) {
+    // Combine names alphabetically
+    var combinedNames = [name1.toLowerCase(), name2.toLowerCase()].sort().join("");
+
+    // Generate a simple hash
+    var hash = 0;
+    for (var i = 0; i < combinedNames.length; i++) {
+        hash = (hash << 5) - hash + combinedNames.charCodeAt(i);
+        hash = hash & hash; // Convert to 32-bit integer
+    }
+
+    // Map the hash to a percentage (0–100)
+    var percentage = Math.abs(hash) % 101;
+    return percentage;
+}
